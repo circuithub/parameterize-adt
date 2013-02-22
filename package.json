@@ -1,0 +1,25 @@
+{
+  "name": "parameterize-adt",
+  "description": "The definition module for parameterized forms (see parameterize-form for a concrete implementation).",
+  "version": "0.0.0",
+  "homepage": "http://github.com/circuithub",
+  "author": {
+    "name": "Rehno Lindeque",
+    "email": "rehno@circuithub.com",
+    "url" : "http://rehno.lindeque.name/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/circuithub/parameterize-adt.git"
+  },
+  "main": "./index.coffee",
+  "engines": {},
+  "dependencies": {
+    "adt.js": "git://github.com/rehno-lindeque/adt.js.git#master"
+  },
+  "devDependencies": {
+    "stitch": "git://github.com/rehno-lindeque/stitch.git#master",
+    "uglify-js": "*"
+  },
+  "optionalDependencies": {}
+}
