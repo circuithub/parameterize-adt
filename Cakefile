@@ -35,10 +35,10 @@ build = (callback) ->
   cp "#{__dirname}/node_modules/adt.js/dist/adt.js", "#{__dirname}/vendor/adt.js", ->
       pkg = stitch.createPackage paths: ["#{__dirname}/build", "#{__dirname}/vendor"]
       pkg.compile (err, source) ->
-        fs.writeFile "dist/parameterize-adt.js", source, (err) ->
+        fs.writeFile "dist/parameterize-adt.complete.js", source, (err) ->
           if err
             throw err
-          console.log "Compiled parameterize-adt.js"
+          console.log "Stitched parameterize-adt.complete.js"
           #ast = uglify.parser.parse source
           #ast = uglify.uglify.ast_squeeze ast
           #uglified_source = uglify.uglify.gen_code ast
