@@ -50,3 +50,7 @@ build = (callback) ->
 
 task 'build', "Build the client-side js version of this library", ->
   build -> log ":)", green
+
+task 'all', "Build all distribution files", -> 
+  build -> log ":)", green
+
