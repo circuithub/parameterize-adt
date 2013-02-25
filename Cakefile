@@ -48,9 +48,13 @@ build = (callback) ->
           #fs.writeFileSync libAssetPath, source
   ###
 
+clean = (callback) ->
+  exec "rm -rf build"
+  callback()
+
 task 'build', "Build the client-side js version of this library", ->
-  build -> log ":)", green
+  clean -> build -> log ":)", green
 
 task 'all', "Build all distribution files", -> 
-  build -> log ":)", green
+  clean -> build -> log ":)", green
 
